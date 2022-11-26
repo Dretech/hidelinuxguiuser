@@ -38,13 +38,13 @@ then
          sed -i 's/SystemAccount=true/SystemAccount=false/g' $path/$1
       elif [ "$systemaccount" == "SystemAccount=true" ] && [ $2 == "yes" ]
       then
-         echo "The GUI for user '$1' is already enabled. No settings are changed."
+         echo "The GUI for user '$1' is already disabled. No settings are changed."
       elif [ "$systemaccount" == "SystemAccount=false" ] && [ $2 == "yes" ]
       then
          sed -i 's/SystemAccount=false/SystemAccount=true/g' $path/$1
       elif [ "$systemaccount" == "SystemAccount=false" ] && [ $2 == "no" ]
       then
-         echo "The GUI for user '$1' is already disabled. No settings are changed."
+         echo "The GUI for user '$1' is already enabled. No settings are changed."
       fi
    else
       echo -e "\nUsername '$1' does not exist. No settings are changed. Valid usernames are:"
