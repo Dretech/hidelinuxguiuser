@@ -30,7 +30,7 @@ error_message() {
 if [ "$1" != "" ] && [ "$2" = "yes" -o "$2" = "no" ]
 then
    path=/var/lib/AccountsService/users
-   if [ -f "$1" ]; then
+   if [ -f "$path/$1" ]; then
       systemaccount=$(grep 'SystemAccount' $path/$1)
       if [ "$systemaccount" == "SystemAccount=true" ] && [ $2 == "no" ]
       then
