@@ -5,6 +5,7 @@
 # that can login in the Graphical User Interface (GUI).
 
 # Usage: hideguiuser username { yes | no }
+# Version: 1.0
 
 # Copyright (C) 2022 Dretech software (dretech at-sign hetnetwerk.org)
 
